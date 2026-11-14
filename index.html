@@ -102,6 +102,79 @@
         .about-text h2 { color: var(--accent-gold); margin-bottom: 15px; font-size: 2rem; }
         .about-text p { font-size: 1.05rem; color: var(--text-muted); }
 
+        /* Education Section */
+    .education-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .education-card {
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-left: 5px solid #f59e0b;
+        border-radius: 10px;
+        padding: 1.4rem 1.75rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .education-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .edu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .edu-header h3 {
+        margin: 0;
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #1f2937;
+    }
+
+    .edu-year {
+        background-color: #fef3c7;
+        color: #b45309;
+        font-size: 0.85rem;
+        font-weight: 600;
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        white-space: nowrap;
+    }
+
+    .edu-institute {
+        margin: 0.2rem 0 0.5rem 0;
+        font-size: 0.98rem;
+        font-weight: 500;
+        color: #4b5563;
+    }
+
+    .edu-grade {
+        display: inline-block;
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: #111827;
+        background: #f3f4f6;
+        padding: 0.2rem 0.65rem;
+        border-radius: 6px;
+    }
+
+    @media (max-width: 600px) {
+        .edu-header {
+            flex-direction: column;
+        }
+    }
+
         /* Experience Section */
         .timeline-item { background-color: var(--bg-off-white); padding: 30px; border-radius: 8px; border-left: 5px solid var(--accent-gold); margin-bottom: 20px; }
         .timeline-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
@@ -185,6 +258,7 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -196,7 +270,7 @@
     <!-- NEW HERO SECTION -->
     <section class="hero" id="home">
         <h1>Bhuvana Vijay Gurram</h1>
-        <p class="subtitle">Data-Driven Strategist | Data Analyst | Content Creator with Expertise in Data Analysis (Python, SQL, Power BI) & Visual Storytelling | Chemical Engineering Undergrad at NITW</p>
+        <p class="subtitle">PGDM Candidate in Business Analytics (Minor: Marketing) at JAGSoM | Business Analyst (Ex-Neemtree Consultancy Services) | B.Tech, NIT Warangal | SQL, Python, Power BI & Stakeholder Management</p>
         
         <div class="hero-icons">
             <a href="mailto:bhuvanavijaygurram@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
@@ -215,58 +289,145 @@
             </div>
             <div class="about-text">
                 <h2>About Me</h2>
-                <p>A detail-oriented Chemical Engineering undergraduate from NIT Warangal with a strong passion for data. Proficient in Python, SQL, Power BI, and IBM Cognos Analytics, with hands-on experience in developing end-to-end data projects. Eager to leverage my analytical skills to uncover insights and solve complex, real-world problems.</p>
+                <p>I am currently pursuing my PGDM in Business Analytics (Minor: Marketing) at Jagdish Sheth School of Management (JAGSoM), Bengaluru, building on a B.Tech in Chemical Engineering from NIT Warangal. Previously, I worked for 1 year and 9 months as a Business Analyst at Neemtree Consultancy Services, where I managed end-to-end data pipelines, built interactive Power BI dashboards, analyzed workflow bottlenecks, and translated raw data into actionable business intelligence. Skilled in SQL, Python, Power BI, stakeholder management, Marketing search and business requirements analysis, I am passionate about bridging data analytics and business strategy to solve complex problems.</p>
             </div>
         </div>
     </section>
+    <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="education-container">
 
+        <div class="education-card">
+            <div class="edu-header">
+                <h3>PGDM – Business Analytics (Minor: Marketing)</h3>
+                <span class="edu-year">2026 – 2028</span>
+            </div>
+            <p class="edu-institute">Jagdish Sheth School of Management (JAGSOM), Bengaluru</p>
+            <span class="edu-grade">Status: Pursuing</span>
+        </div>
+
+        <div class="education-card">
+            <div class="edu-header">
+                <h3>Bachelor of Technology (B.Tech) – Chemical Engineering</h3>
+                <span class="edu-year">2020 – 2024</span>
+            </div>
+            <p class="edu-institute">National Institute of Technology, Warangal (NITW)</p>
+            <span class="edu-grade">CGPA: 6.79 / 10</span>
+        </div>
+
+        <div class="education-card">
+            <div class="edu-header">
+                <h3>Class XII (Intermediate)</h3>
+                <span class="edu-year">2018 – 2020</span>
+            </div>
+            <p class="edu-institute">Tirumala Junior College, Katheru</p>
+            <span class="edu-grade">CGPA: 9.88 / 10</span>
+        </div>
+
+        <div class="education-card">
+            <div class="edu-header">
+                <h3>Class X (Secondary Education)</h3>
+                <span class="edu-year">2017 – 2018</span>
+            </div>
+            <p class="edu-institute">Ravindra Bharathi School, Jaggampeta</p>
+            <span class="edu-grade">CGPA: 10 / 10</span>
+        </div>
+
+    </div>
+</section>
     <section id="experience">
         <h2 class="section-title">Work Experience</h2>
         
         <div class="timeline-item">
             <div class="timeline-header">
                 <h3>Business Analyst</h3>
-                <span class="date">August 2024 - Present</span>
+                <span class="date">August 2024 - May 2026</span>
             </div>
             <h4>Neemtree Consultancy Services</h4>
             <ul>
-                <li>Analyze current business processes, workflows, and data to identify bottlenecks and opportunities for increased efficiency.</li>
-                <li>Design and document future-state processes, utilizing tools such as flowcharts to streamline operations and align with strategic goals.</li>
+                <li>Collected, cleaned, and validated student datasets (Class XI/XII and graduates) to streamline telecaller outreach to prospective students and parents.</li>
+                <li>Analyzed student preference data across study-abroad interest, courses, target countries, and universities, presenting structured insights to the Head and key stakeholders.</li>
+                <li>Tracked visa and university application pipelines for consultancy students (MBBS, UG, Master's, MBA, and PG programs) across multiple countries, maintaining accurate records and updating stakeholders.</li>
+                <li>Developed interactive Power BI dashboards for operational data analysis and financial reporting to support strategic decision-making.</li>
+                <li>Evaluated geopolitical and visa-policy factors influencing students' international higher-education decisions.</li>
+                <li>Identified operational bottlenecks by analyzing workflows and data, and documented future-state processes using flowcharts to streamline operations and align with strategic goals.</li>
             </ul>
         </div>
 
     </section>
 
-    <section id="skills">
-        <h2 class="section-title">Skills & Expertise</h2>
+<section id="skills" class="skills">
+        <h2>Skills &amp; Expertise</h2>
         <div class="skills-grid">
-            <div class="skill-box">
-                <h3>&#60;/&#62; Programming Languages</h3>
-                <div class="tags"><span class="tag">C/C++</span><span class="tag">Python</span></div>
+            <div class="skill-card">
+                <h3>📊 Business &amp; Strategy</h3>
+                <div class="skill-tags">
+                    <span>Business Analysis</span>
+                    <span>Business Requirement Documentation (BRD)</span>
+                    <span>Stakeholder Management</span>
+                    <span>Process Mapping</span>
+                    <span>Consumer Behaviour</span>
+                    <span>Marketing Research</span>
+                    <span>Event Management</span>
+                    <span>Leadership</span>
+                </div>
             </div>
-            <div class="skill-box">
-                <h3>&#9776; Databases</h3>
-                <div class="tags"><span class="tag">SQL</span><span class="tag">MySQL</span></div>
+
+            <div class="skill-card">
+                <h3>&lt;/&gt; Programming Languages</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>C/C++</span>
+                </div>
             </div>
-            <div class="skill-box">
-                <h3>&#128202; Data Analysis</h3>
-                <div class="tags"><span class="tag">NumPy</span><span class="tag">Pandas</span></div>
+
+            <div class="skill-card">
+                <h3>☰ Databases</h3>
+                <div class="skill-tags">
+                    <span>SQL</span>
+                    <span>MySQL</span>
+                    <span>Database Design &amp; ER Modeling</span>
+                </div>
             </div>
-            <div class="skill-box">
-                <h3>&#128200; Data Visualization</h3>
-                <div class="tags"><span class="tag">Power BI</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">IBM Cognos Analytics</span><span class="tag">Google Looker Studio</span></div>
+
+            <div class="skill-card">
+                <h3>🔍 Data Analysis &amp; Collection</h3>
+                <div class="skill-tags">
+                    <span>NumPy</span>
+                    <span>Pandas</span>
+                    <span>Web Scraping</span>
+                    <span>Data Cleaning &amp; Validation</span>
+                </div>
             </div>
-            <div class="skill-box">
-                <h3>&#129504; AI Tools</h3>
-                <p style="font-size:0.9rem; color:var(--text-muted);">Knowledgeable in developing with and utilizing a variety of modern AI tools.</p>
+
+            <div class="skill-card">
+                <h3>📈 Data Visualization</h3>
+                <div class="skill-tags">
+                    <span>Power BI</span>
+                    <span>Matplotlib</span>
+                    <span>Seaborn</span>
+                    <span>IBM Cognos Analytics</span>                    
+                </div>
             </div>
-            <div class="skill-box">
-                <h3>&#128196; Productivity Tools</h3>
-                <div class="tags"><span class="tag">MS Excel</span><span class="tag">MS PowerPoint</span><span class="tag">MS Word</span></div>
+
+            <div class="skill-card">
+                <h3>🧠 AI &amp; Productivity Tools</h3>
+                <div class="skill-tags">
+                    <span>Generative AI for Data Analysis</span>
+                    <span>Prompt Engineering</span>        
+                    <span>MS Excel</span>
+                    <span>MS PowerPoint</span>
+                    <span>MS Word</span>
+                </div>
             </div>
-            <div class="skill-box">
-                <h3>&#25991; Languages</h3>
-                <div class="tags"><span class="tag">Telugu</span><span class="tag">Hindi</span><span class="tag">English</span></div>
+
+            <div class="skill-card">
+                <h3>文 Languages</h3>
+                <div class="skill-tags">
+                    <span>Telugu (Native)</span>
+                    <span>English (Professional Working Proficiency)</span>
+                    <span>Hindi (Limited Working Proficiency)</span>
+                </div>
             </div>
         </div>
     </section>
@@ -274,6 +435,17 @@
     <section id="projects">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
+            <div class="project-card">
+                <h3>Hostel Nutrition Improvement (Business Requirement Analysis)</h3>
+                <p>Team business analysis project focused on improving the nutritional quality of meals at IFIM Hostel, JAGSOM. Contributed to the Business Case, Business Work Plan, Business Requirement Document (BRD), and Stakeholder Matrix. Managed key stakeholders (hostel management, caterer, and students) and designed a structured survey questionnaire to quantify student dietary preferences.</p>
+                <div class="project-tags">
+                    <span>Business Analysis</span>
+                    <span>BRD</span>
+                    <span>Stakeholder Management</span>
+                    <span>Survey Design</span>
+                    <span>Marketing Research</span>
+                </div>
+            </div>
             <div class="project-card">
                 <h3>Design of Student Database Management System (DBMS)</h3>
                 <p>A group project to create a centralized database for NIT Warangal students. Designed and developed a relational database using SQL to manage information on mess, hostel, library, and academics. Involved creating an ER diagram and normalizing the database.</p>
@@ -401,19 +573,20 @@
         </div>
     </section>
 
-    <section id="resume" class="resume-section">
-        <h2>&#128196; My Resume</h2>
-        <p style="color: var(--text-muted); margin-top: 10px;">For a comprehensive overview of my academic background and professional experience.</p>
-        <div class="resume-actions">
-            <a href="Bhuvana_Vijay_Gurram-Resume.pdf" target="_blank" class="btn-outline">View Resume</a>
-            <a href="Bhuvana_Vijay_Gurram-Resume.pdf" download="Bhuvana_Vijay_Gurram_Resume.pdf" class="btn-full" style="max-width: 200px;">Download PDF</a>
+    <section id="resume" class="resume">
+        <h2>📄 My Resume</h2>
+        <p>For a comprehensive overview of my PGDM coursework, business analysis experience, and academic background.</p>
+        <div class="resume-buttons">
+            <a href="BhuvanaVijayGurram_2026JULJPGG0022.pdf" target="_blank" class="btn">View Resume</a>
+            <a download="BhuvanaVijayGurram_2026JULJPGG0022.pdf" href="BhuvanaVijayGurram_2026JULJPGG0022.pdf" class="btn">Download PDF</a>
         </div>
     </section>
 
     <footer>
         <div class="contact-info">
+            <p><strong>Location:</strong> Bengaluru, Karnataka, India</p>
             <p><strong>Phone:</strong> <a href="tel:+919676019899">+91 9676019899</a></p>
-            <p><strong>Email:</strong> <a href="mailto:bhuvanavijaygurram@gmail.com">bhuvanavijaygurram@gmail.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:bhuvanavijaygurram@gmail.com">bhuvanavijaygurram@gmail.com</a> | <a href="mailto:2026JULJPGG0022@jagsom.edu.in">2026JULJPGG0022@jagsom.edu.in</a></p>
         </div>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/bhuvanavijaygurram/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
