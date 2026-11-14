@@ -243,21 +243,62 @@
     }
 
         /* Projects Format */
-        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px; }
-        .project-card { background-color: var(--bg-off-white); border: 1px solid var(--border-color); padding: 30px; border-radius: 10px; display: flex; flex-direction: column; }
-        .project-card h3 { color: var(--accent-gold); margin-bottom: 15px; font-size: 1.4rem; }
-        .project-card p { color: var(--text-muted); margin-bottom: 20px; flex-grow: 1; }
-        .project-card .tags { margin-bottom: 25px; }
-        .btn-full { display: block; width: 100%; text-align: center; background-color: var(--accent-gold); color: var(--text-main); padding: 12px; border-radius: 5px; font-weight: 700; transition: 0.3s; }
-        .btn-full:hover { background-color: var(--accent-gold-hover); }
-        .nutrition-tags-wrap {
+        HTML
+<!-- FEATURED PROJECTS SECTION -->
+<style>
+    .projects-grid-unified {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 1.75rem;
+        align-items: stretch;
+    }
+
+    .project-card-unified {
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card-unified:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    }
+
+    .project-card-unified h3 {
+        margin: 0 0 1rem 0;
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: #f59e0b;
+        line-height: 1.35;
+    }
+
+    .project-card-unified p {
+        margin: 0 0 1.25rem 0;
+        font-size: 0.96rem;
+        color: #4b5563;
+        line-height: 1.65;
+    }
+
+    .project-footer-unified {
+        margin-top: auto;
+    }
+
+    .project-tags-unified {
         display: flex;
         flex-wrap: wrap;
         gap: 0.6rem;
-        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
     }
 
-    .nutrition-tag-pill {
+    .project-pill-unified {
         display: inline-block;
         padding: 0.35rem 0.9rem;
         border: 1.5px solid #f59e0b;
@@ -269,12 +310,11 @@
         line-height: 1.4;
     }
 
-    .nutrition-github-btn {
+    .project-github-btn-unified {
         display: block;
         width: 100%;
         box-sizing: border-box;
-        margin-top: 1.25rem;
-        padding: 0.75rem 1rem;
+        padding: 0.8rem 1rem;
         background-color: #ffc107;
         color: #1f2937;
         font-weight: 700;
@@ -285,7 +325,7 @@
         transition: background-color 0.2s ease, transform 0.2s ease;
     }
 
-    .nutrition-github-btn:hover {
+    .project-github-btn-unified:hover {
         background-color: #f59e0b;
         transform: translateY(-1px);
     }
@@ -498,7 +538,6 @@
                 <span class="skill-pill">Matplotlib</span>
                 <span class="skill-pill">Seaborn</span>
                 <span class="skill-pill">IBM Cognos Analytics</span>
-                <span class="skill-pill">Google Looker Studio</span>
             </div>
         </div>
 
