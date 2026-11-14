@@ -250,6 +250,45 @@
         .project-card .tags { margin-bottom: 25px; }
         .btn-full { display: block; width: 100%; text-align: center; background-color: var(--accent-gold); color: var(--text-main); padding: 12px; border-radius: 5px; font-weight: 700; transition: 0.3s; }
         .btn-full:hover { background-color: var(--accent-gold-hover); }
+        .nutrition-tags-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-top: 1.25rem;
+    }
+
+    .nutrition-tag-pill {
+        display: inline-block;
+        padding: 0.35rem 0.9rem;
+        border: 1.5px solid #f59e0b;
+        border-radius: 999px;
+        background-color: #ffffff;
+        color: #1f2937;
+        font-size: 0.85rem;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+
+    .nutrition-github-btn {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 1.25rem;
+        padding: 0.75rem 1rem;
+        background-color: #ffc107;
+        color: #1f2937;
+        font-weight: 700;
+        font-size: 0.95rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .nutrition-github-btn:hover {
+        background-color: #f59e0b;
+        transform: translateY(-1px);
+    }
 
         /* Certs & Test Scores */
         .split-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
@@ -492,16 +531,19 @@
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <h3>Hostel Nutrition Improvement (Business Requirement Analysis)</h3>
-                <p>Team business analysis project focused on improving the nutritional quality of meals at IFIM Hostel, JAGSOM. Contributed to the Business Case, Business Work Plan, Business Requirement Document (BRD), and Stakeholder Matrix. Managed key stakeholders (hostel management, caterer, and students) and designed a structured survey questionnaire to quantify student dietary preferences.</p>
-                <div class="project-tags">
-                    <span>Business Analysis</span>
-                    <span>BRD</span>
-                    <span>Stakeholder Management</span>
-                    <span>Survey Design</span>
-                    <span>Marketing Research</span>
-                </div>
-            </div>
+    <h3>Improve Hostel Meal Nutrition (Business Requirement Analysis)</h3>
+    <p>Team business analysis project focused on improving the nutritional quality of meals at IFIM Hostel, JAGSOM. Contributed to the Business Case, Business Work Plan, Business Requirement Document (BRD), and Stakeholder Matrix. Managed key stakeholders (hostel management, caterer, and students) and designed a structured survey questionnaire to quantify student dietary preferences[cite: 12].</p>
+    
+    <div class="nutrition-tags-wrap">
+        <span class="nutrition-tag-pill">Business Analysis</span>
+        <span class="nutrition-tag-pill">BRD</span>
+        <span class="nutrition-tag-pill">Stakeholder Management</span>
+        <span class="nutrition-tag-pill">Survey Design</span>
+        <span class="nutrition-tag-pill">Marketing Research</span>
+    </div>
+
+    <a href="https://github.com/bhuvanavijaygurram/Improve_Hostel_Meal_Nutrition" target="_blank" class="nutrition-github-btn">🖧 View on GitHub</a>
+</div
             <div class="project-card">
                 <h3>Design of Student Database Management System (DBMS)</h3>
                 <p>A group project to create a centralized database for NIT Warangal students. Designed and developed a relational database using SQL to manage information on mess, hostel, library, and academics. Involved creating an ER diagram and normalizing the database.</p>
